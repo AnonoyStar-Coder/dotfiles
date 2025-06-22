@@ -112,7 +112,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#b0b846",
+          "foreground": "#A1ACC4",
           "style": "plain",
           "template": "\u2502",
           "type": "text"
@@ -121,8 +121,8 @@
           "leading_diamond": "",
           "properties": {
             "folder_icon": " \uf07c ",
-            "folder_separator_icon": " <#b0b846>\uf061</> ",
-            "home_icon": " <#f28534>\uf015</>",
+            "folder_separator_icon": " <#A1ACC4>\uf061</> ",
+            "home_icon": " <#e9b143>\uf015</>",
             "style": "agnoster_short",
             "max_depth": 4,
             "right_format": "<u><b>%s</b></u>",
