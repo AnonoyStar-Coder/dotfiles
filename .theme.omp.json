@@ -34,8 +34,64 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "#ffffff",
-          "background": "#7F5AF0",
+          "background": "#473c29",
           "template": "{{ if env \"IN_NIX_SHELL\" }} \uf313 nix-shell ({{ env \"IN_NIX_SHELL\" }}) {{ end }}"
+        },
+                {
+          "type": "cmake",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#E8EAEE",
+          "background": "#1E9748",
+          "template": "<b> \ue61e \ue61d cmake {{ .Full }} </b>"
+        },
+        {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "display_mode": "context"
+          },
+          "foreground": "#000000",
+          "foreground_templates": [
+            "{{ if .Venv }}#FFFFFF{{ end }}"
+          ],
+          "background": "#EBFF3B",
+          "background_templates": [
+            "{{ if .Venv}}#356C9C{{ end }}"
+          ],
+          "template": " <b>\ue73c {{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}</b> "
+        },
+        {
+          "type": "go",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#000000",
+          "background": "#7FD5EA",
+          "template": "<b> \u202d\ue626 {{ .Full }} </b>"
+        },
+        {
+          "type": "rust",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#e2f3ff",
+          "background": "#684e3d",
+          "template": " \ue7a8 {{ .Full }} "
+        },
+        {
+          "background": "#D53010",
+          "foreground": "#FFFFFF",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "branch_icon": " ",
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "fetch_worktree_count": true
+          },
+          "style": "powerline",
+          "template": "<b> {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#CAEBE1> \uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} </b>",
+          "type": "git"
         }
       ],
       "type": "prompt"
