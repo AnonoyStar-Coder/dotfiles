@@ -52,11 +52,11 @@
           "properties": {
             "display_mode": "context"
           },
-          "foreground": "#000000",
+          "foreground": "#32302f",
           "foreground_templates": [
             "{{ if .Venv }}#FFFFFF{{ end }}"
           ],
-          "background": "#EBFF3B",
+          "background": "#8c945c",
           "background_templates": [
             "{{ if .Venv}}#356C9C{{ end }}"
           ],
@@ -79,7 +79,7 @@
           "template": " \ue7a8 {{ .Full }} "
         },
         {
-          "background": "#D53010",
+          "background": "#92687b",
           "foreground": "#FFFFFF",
           "powerline_symbol": "\ue0b0",
           "properties": {
