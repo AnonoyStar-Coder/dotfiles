@@ -6,16 +6,16 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#4F70BA",
-          "foreground": "#FFFFFF",
+          "background": "#3c3836",
+          "foreground": "#e9b143",
           "leading_diamond": "\ue0b2",
           "style": "diamond",
           "template": "<b>  NIXOS </b>",
           "type": "os"
         },
         {
-          "background": "#7EB5E1",
-          "foreground": "#000000",
+          "background": "#7c6764",
+          "foreground": "#f9f5d7",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": "<b> \uf489 {{ .Name }} </b>",
@@ -44,9 +44,9 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#03DE6C",
+          "background": "#72761e",
           "background_templates": ["{{ if gt .Code 0 }}#E44141{{ end }}"],
-          "foreground": "#000000",
+          "foreground": "#f9f5d7",
           "foreground_templates": ["{{ if gt .Code 0 }}#FFFFFF{{ end }}"],
           "leading_diamond": "\ue0b2",
           "properties": { "always_enabled": true },
@@ -56,7 +56,7 @@
           "trailing_diamond": "\ue0b0"
         },
         {
-          "background": "#575656",
+          "background": "#3c3836",
           "foreground": "#FFFFFF",
           "properties": { "style": "roundrock", "threshold": 0 },
           "style": "diamond",
@@ -78,7 +78,7 @@
           "type": "text"
         },
         {
-          "foreground": "#9DD447",
+          "foreground": "#f9eabf",
           "properties": {
             "time_format": " <#D4A647>\uf017 03:04:05 PM</> <#47D49E>|</> \uf073 06/01/02 \uf104 January \uf142 Wednesday \uf105"
           },
@@ -101,7 +101,7 @@
         },
         {
           "style": "plain",
-          "template": "  <#6F8AC7>\uf007 {{ .UserName }}</> <#47D49E>|</> <#796FC7>\udb80\udf79 {{ .HostName }}",
+          "template": "  <#80aa9e>\uf007 {{ .UserName }}</> <#d3869b>|</> <#f28534>\udb80\udf79 {{ .HostName }}",
           "type": "session"
         }
       ],
@@ -112,7 +112,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#A1ACC4",
+          "foreground": "#b0b846",
           "style": "plain",
           "template": "\u2502",
           "type": "text"
@@ -121,18 +121,18 @@
           "leading_diamond": "",
           "properties": {
             "folder_icon": " \uf07c ",
-            "folder_separator_icon": " <#A1ACC4>\uf061</> ",
-            "home_icon": "\uf015",
+            "folder_separator_icon": " <#b0b846>\uf061</> ",
+            "home_icon": " <#f28534>\uf015</>",
             "style": "agnoster_short",
             "max_depth": 4,
             "right_format": "<u><b>%s</b></u>",
             "mapped_locations": {
-              "~/Videos": "\uf015 <#A1ACC4>\uf061</> \uf03d",
-              "~/Desktop": "\uf015 <#A1ACC4>\uf061</> \uf108",
-              "~/Documents": "\uf015 <#A1ACC4>\uf061</> \udb80\ude19",
-              "~/Downloads": "\uf015 <#A1ACC4>\uf061</> \uf019",
-              "~/Pictures/": "\uf015 <#A1ACC4>\uf061</> \uf03e",
-              "~/Music": "\uf015 <#A1ACC4>\uf061</> \uf001"
+              "~/Videos": "<#e9b143>\uf015</> <#72761e>\uf061</> <#e9b143>\uf03d</>",
+              "~/Desktop": "<#e9b143>\uf015</> <#72761e>\uf061</> <#e9b143>\uf108</>",
+              "~/Documents": "<#e9b143>\uf015</> <#72761e>\uf061</> <#e9b143>\udb80\ude19</>",
+              "~/Downloads": "<#e9b143>\uf015</> <#72761e>\uf061</> <#e9b143>\uf019</>",
+              "~/Pictures/": "<#e9b143>\uf015</> <#72761e>\uf061</> <#e9b143>\uf03e</>",
+              "~/Music": "<#f28534>\uf015</> <#72761e>\uf061</> <#e9b143>\uf001</>"
             }
           },
           "style": "diamond",
