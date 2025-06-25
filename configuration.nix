@@ -1,13 +1,9 @@
 { config, lib, pkgs, ... }:
 let
-<<<<<<< Updated upstream
-    home-manager=builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
-=======
     home-manager=builtins.fetchTarball {
         url = "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
         sha256 = "0kl0iw1n466h74ijc689a5l9k4wixpx29046cqzdc39wj2ids79f";
     };
->>>>>>> Stashed changes
 in
 
 {
