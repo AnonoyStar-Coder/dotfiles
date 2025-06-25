@@ -35,7 +35,7 @@ in
   };
   services.xserver.displayManager.lightdm = {
       enable = true;
-      background = "/home/balraj/dotfiles/walls/castle.jpg";
+      background = "/etc/lightdm/walls/castle.jpg";
 
       greeters.gtk = {
           enable = true;
