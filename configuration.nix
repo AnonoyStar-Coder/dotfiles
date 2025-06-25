@@ -31,11 +31,11 @@ in
     enable = true;
     windowManager.qtile.enable = true;
     displayManager.sessionCommands = ''
-        xwallpaper --zoom ~/walls/snake.png'';
+        xwallpaper --zoom ./walls/gruvbox-nix.png'';
   };
   services.xserver.displayManager.lightdm = {
       enable = true;
-      background = "/etc/lightdm/backgrounds/login.png";
+      background = "./walls/castle.jpg";
 
       greeters.gtk = {
           enable = true;
