@@ -76,7 +76,7 @@ cd ~/dotfiles
 make the changes according to your needs (like please change the username atleast....)
 run "sudo nixos-rebuild switch --flake ."
 reboot
-
+```
 ✨ Features
 
     🧠 Flake-based setup with locked inputs
