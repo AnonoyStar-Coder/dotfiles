@@ -24,9 +24,9 @@ alias nix-config='sudo vim /etc/nixos/configuration.nix'
 
 alias home-config='sudo vim /etc/nixos/home.nix'
 
-alias switch='sudo nixos-rebuild switch'
+alias switch='sudo nixos-rebuild switch --flake ~/dotfiles/'
 
-alias rebuild='sudo nixos-rebuild switch --flake ~/dotfiles/flake.nix'
+alias rebuild='sudo nixos-rebuild switch --flake ~/dotfiles/'
 
 alias delete-old='sudo nix-collect-garbage --delete-old'
 
