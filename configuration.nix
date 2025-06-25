@@ -28,9 +28,30 @@ in
     enable = true;
     windowManager.qtile.enable = true;
     displayManager.sessionCommands = ''
-        xwallpaper --zoom ~/walls/castle.jpg
-        '';
-     };
+        xwallpaper --zoom ~/walls/snake.png'';
+  };
+  services.xserver.displayManager.lightdm = {
+      enable = true;
+      background = "/etc/lightdm/backgrounds/login.png";
+
+      greeters.gtk = {
+          enable = true;
+          theme.name = "Gruvbox-Dark";
+          theme.package = pkgs.gruvbox-gtk-theme;
+          iconTheme.name = "Gruvbox-Plus";
+          iconTheme.package = pkgs.gruvbox-plus-icons;
+
+          cursorTheme.name = "Future-Cursors";
+          cursorTheme.size = 24;
+
+          extraConfig = ''
+              font-name = Lilex Nerd Font 12
+              xft-antialias = true
+              xft-hinting = true
+              xft-hintstyle = hintfull
+              '';
+      };
+  };
 
   nixpkgs.config.allowUnfree = true;
 
@@ -56,6 +77,7 @@ in
       oh-my-posh
       rofi
       gh
+      spotify
       lazygit
       vscode
       tmux
@@ -98,7 +120,7 @@ in
   environment.systemPackages = with pkgs; [
     vim
     wget
-    alacritty
+    kitty
     xwallpaper
     brightnessctl
     pamixer
@@ -108,6 +130,7 @@ in
     xfce.thunar-archive-plugin
     xorg.xev
     xorg.xmodmap
+    picom
     xbindkeys
     acpi
     libinput
@@ -116,6 +139,15 @@ in
     bluez
     xcb-util-cursor
     git
+    onlyoffice-desktopeditors
+    libreoffice
+    corefonts
+    gruvbox-gtk-theme
+    gruvbox-plus-icons
+    vista-fonts
+    feh
+    gvfs
+    gnome.gvfs
   ];
 
   fonts.packages = with pkgs; [
@@ -127,6 +159,11 @@ in
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
+  services.gvfs.enable = true;
+  services.tumbler.enable = true;
+
+  programs.xfconf.enable = true;
+
   hardware.bluetooth.settings = {
 	General = {
 		Experimental = true;
@@ -136,4 +173,7 @@ in
   services.blueman.enable = true;
 
   system.stateVersion = "25.05";
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 }

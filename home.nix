@@ -15,6 +15,8 @@
 
   home.file.".config/qtile".source = /home/balraj/dotfiles/qtile;
 
+  home.file.".config/kitty".source = /home/balraj/dotfiles/kitty;
+
   home.file.".config/alacritty".source = /home/balraj/dotfiles/alacritty;
   
   home.file.".config/rofi".source = /home/balraj/dotfiles/rofi;
