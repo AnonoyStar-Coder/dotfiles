@@ -18,11 +18,11 @@ alias nerdfetch="curl -fsSL https://raw.githubusercontent.com/ThatOneCalculator/
 
 alias neofetch="nerdfetch"
 
-alias config-folder='cd /etc/nixos/'
+alias config-folder='cd ~/dotfiles/'
 
-alias nix-config='sudo vim /etc/nixos/configuration.nix'
+alias nix-config='vim ~/dotfiles/configuration.nix'
 
-alias home-config='sudo vim /etc/nixos/home.nix'
+alias home-config='vim ~/dotfiles/home.nix'
 
 alias switch='sudo nixos-rebuild switch --flake ~/dotfiles/'
 
