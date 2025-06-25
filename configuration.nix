@@ -1,16 +1,10 @@
 { config, lib, pkgs, ... }:
-let
-    home-manager=builtins.fetchTarball {
-        url = "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
-        sha256 = "0kl0iw1n466h74ijc689a5l9k4wixpx29046cqzdc39wj2ids79f";
-    };
-in
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      (import "${home-manager}/nixos")
+      # home-manager module now comes from flake.nix
     ];
 
   home-manager.useUserPackages = true;
@@ -27,15 +21,18 @@ in
 
   time.timeZone = "Asia/Kolkata";
 
+  environment.etc."walls/gruvbox-nix.png".source = ./walls/gruvbox-nix.png;
+  environment.etc."walls/castle.jpg".source = ./walls/castle.jpg;
+
   services.xserver = {
     enable = true;
     windowManager.qtile.enable = true;
     displayManager.sessionCommands = ''
-        xwallpaper --zoom ./walls/gruvbox-nix.png'';
+        xwallpaper --zoom /etc/walls/gruvbox-nix.png'';
   };
   services.xserver.displayManager.lightdm = {
       enable = true;
-      background = "/etc/lightdm/walls/castle.jpg";
+      background = "/etc/walls/castle.jpg";
 
       greeters.gtk = {
           enable = true;
@@ -89,10 +86,6 @@ in
   };
 
   programs.firefox.enable = true;
-
-  nix.extraOptions = '' 
-        experimental-features = nix-command flakes
-      '';
 
   services.twingate.enable = true;
 
