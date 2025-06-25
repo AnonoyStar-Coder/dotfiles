@@ -46,7 +46,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Bar([
+        top=bar.Bar([
             separator_left("#3c3836", "#1d2021"),
             widget.GroupBox(
                 background="#3c3836",
