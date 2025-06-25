@@ -35,6 +35,24 @@
   programs.home-manager.enable = true;
   fonts.fontconfig.enable = true;
 
+  # Packages
+  home.packages = with pkgs; [
+  # CLI Tools
+  tree neovim btop ranger eza tmux
+
+  # Bluetooth & Music
+  bluetui librespot spotify-player spotify
+
+  # Dev Stuff
+  gh lazygit vscode
+
+  # Fancy Shell Vibes
+  oh-my-posh rofi
+
+  # Remote Access
+  twingate
+];
+
   # 🧠 Shell & theming
   home.file.".bashrc".source = ./.bashrc;
   home.file.".bash-alias".source = ./.bash-alias;

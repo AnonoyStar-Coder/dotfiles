@@ -65,24 +65,6 @@
   users.users.balraj = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
-    packages = with pkgs; [
-      tree
-      neovim
-      btop
-      ranger
-      bluetui
-      eza
-      librespot
-      spotify-player
-      oh-my-posh
-      rofi
-      gh
-      spotify
-      lazygit
-      vscode
-      tmux
-      twingate
-    ];
   };
 
   programs.firefox.enable = true;
