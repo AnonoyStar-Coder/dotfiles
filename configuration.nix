@@ -140,6 +140,9 @@
   services.gvfs.enable = true;
   services.tumbler.enable = true;
 
+  services.dbus.enable = true;
+  programs.dconf.enable = true;
+
   programs.xfconf.enable = true;
 
   hardware.bluetooth.settings = {
