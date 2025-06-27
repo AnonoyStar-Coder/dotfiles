@@ -1,6 +1,5 @@
 {
   home.file.".config/qtile".source = ../qtile;
-  home.file.".config/nvim".source = ../nvim;
   home.file.".config/kitty".source = ../kitty;
   home.file.".config/alacritty".source = ../alacritty;
   home.file.".config/rofi".source = ../rofi;
