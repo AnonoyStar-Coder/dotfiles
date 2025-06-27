@@ -19,6 +19,6 @@
 
     # Declarative Theme
     gruvbox-gtk-theme
-    gruvbox-plus-icon-theme
+    gruvbox-plus-icons
   ];
 }
