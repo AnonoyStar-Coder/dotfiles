@@ -45,3 +45,5 @@ alias joke="nix-shell -p cowsay lolcat --command 'curl https://icanhazdadjoke.co
 alias watch="watch -n 0.5"
 
 alias observe="watch"
+
+alias gemini="npx https://github.com/google-gemini/gemini-cli"
