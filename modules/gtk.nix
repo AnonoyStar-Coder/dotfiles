@@ -9,7 +9,7 @@
     };
     iconTheme = {
       name = "Gruvbox-Plus-Dark";
-      package = pkgs.gruvbox-plus-icon-theme;
+      package = pkgs.gruvbox-plus-icons;
     };
   };
 }
