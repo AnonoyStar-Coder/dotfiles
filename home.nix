@@ -44,7 +44,7 @@
   bluetui librespot spotify-player spotify
 
   # Dev Stuff
-  gh lazygit vscode
+  gh lazygit vscode nodejs
 
   # Fancy Shell Vibes
   oh-my-posh rofi
