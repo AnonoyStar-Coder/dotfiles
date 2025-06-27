@@ -15,5 +15,5 @@
   programs.home-manager.enable = true;
   fonts.fontconfig.enable = true;
 
-  services.dconf.enable = true;
+  programs.dconf.enable = true;
 }
