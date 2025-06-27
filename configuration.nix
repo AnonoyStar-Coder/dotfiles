@@ -21,8 +21,8 @@
 
   time.timeZone = "Asia/Kolkata";
 
-  environment.etc."walls/gruvbox-nix.png".source = ./walls/gruvbox-nix.png;
-  environment.etc."walls/castle.jpg".source = ./walls/castle.jpg;
+  environment.etc."walls/gruvbox-nix.png".source = ./walls/anime1.png;
+  environment.etc."walls/castle.jpg".source = ./walls/anime-lock.png;
 
   services.xserver = {
     enable = true;
