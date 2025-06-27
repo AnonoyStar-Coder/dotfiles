@@ -159,10 +159,7 @@
     vSync = true;
     # Configure opacity for specific applications.
     # Example for Alacritty and Kitty terminals:
-    opacity = {
-      "80:class_g = 'Alacritty'" = true;
-      "80:class_g = 'kitty'" = true;
-    };
+    
   };
 
   system.stateVersion = "25.05";
