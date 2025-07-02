@@ -30,6 +30,7 @@
     displayManager.sessionCommands = ''
         xwallpaper --zoom /etc/walls/gruvbox-nix.png'';
   };
+  services.xserver.desktopManager.gnome = true;
   services.xserver.displayManager.lightdm = {
       enable = true;
       background = "/etc/walls/castle.jpg";
