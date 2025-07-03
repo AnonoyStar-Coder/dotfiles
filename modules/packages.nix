@@ -18,6 +18,6 @@
     twingate
 
     # Declarative Theme
-    papirus-icon-theme
+    papirus-icon-theme addwater
   ];
 }
