@@ -18,6 +18,6 @@
     twingate
 
     # Declarative Theme
-    orchis-theme papirus-icon-theme
+    papirus-icon-theme
   ];
 }

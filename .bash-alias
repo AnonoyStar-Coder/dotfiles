@@ -24,9 +24,15 @@ alias nix-config='vim ~/dotfiles/configuration.nix'
 
 alias home-config='vim ~/dotfiles/home.nix'
 
-alias switch='sudo nixos-rebuild switch --flake ~/dotfiles/'
+alias dotfiles='cd ~/dotfiles/'
 
-alias rebuild='sudo nixos-rebuild switch --flake ~/dotfiles/'
+alias gruv-theme='cd ~/dotfiles && git checkout main && git pull && cd -'
+
+alias blue-theme='cd ~/dotfiles && git checkout blue && git pull && cd -'
+
+alias switch='sudo nixos-rebuild switch --flake ~/dotfiles/ --impure'
+
+alias rebuild='sudo nixos-rebuild switch --flake ~/dotfiles/ --impure'
 
 alias delete-old='sudo nix-collect-garbage --delete-old'
 
