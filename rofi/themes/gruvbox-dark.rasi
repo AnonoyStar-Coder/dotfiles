@@ -1,7 +1,7 @@
 * {
     font: "Lilex Nerd Font 14";
-    text-color: #ebdbb2;
-    background-color: #1d2021;
+    text-color: #d0e7ff;
+    background-color: #0d1117;
     border: 0;
     padding: 6px;
     spacing: 5px;
@@ -11,7 +11,7 @@
 window {
     background-color: @background-color;
     border: 2px solid;
-    border-color: #fabd2f;
+    border-color: #5fa8d3;
     border-radius: 6px;
     padding: 8px;
 }
@@ -23,19 +23,19 @@ mainbox {
 }
 
 inputbar {
-    background-color: #1d2021;
+    background-color: #0d1117;
     border: 1px solid;
-    border-color: #fabd2f;
+    border-color: #5fa8d3;
     padding: 8px;
 }
 
 prompt {
     padding: 0px 6px 0px 0px;
-    text-color: #fabd2f;
+    text-color: #5fa8d3;
 }
 
 entry {
-    text-color: #ebdbb2;
+    text-color: #d0e7ff;
     placeholder: "Type to search...";
 }
 
@@ -47,18 +47,18 @@ listview {
     fixed-height: false;
     dynamic: true;
     border: 1px solid;
-    border-color: #3c3836;
+    border-color: #1c1f26;
     padding: 5px;
 }
 
 element {
     background-color: transparent;
-    text-color: #ebdbb2;
+    text-color: #d0e7ff;
 }
 
 element selected {
-    background-color: #3c3836;
-    text-color: #fabd2f;
+    background-color: #1c1f26;
+    text-color: #5fa8d3;
     border-radius: 4px;
 }
 
@@ -70,4 +70,3 @@ element-icon {
 element-text {
     text-color: inherit;
 }
-
