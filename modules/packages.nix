@@ -20,6 +20,5 @@
     # Declarative Theme
     gruvbox-gtk-theme
     gruvbox-plus-icons
-    spicetify-cli
   ];
 }
