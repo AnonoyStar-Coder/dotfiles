@@ -47,48 +47,48 @@ extension_defaults = widget_defaults.copy()
 screens = [
     Screen(
         top=bar.Bar([
-            separator_left("#3c3836", "#1d2021"),
+            separator_left("#78a1c6", "#1d2021"),
             widget.GroupBox(
-                background="#3c3836",
+                background="#78a1c6",
                 highlight_method="line",
-                inactive="#d5c4a1",
+                inactive="#1d2021",
                 this_current_screen_border="#fe8019",
             ),
 
-            separator_left("#fadb2f", "#3c3836"),
+            separator_left("#141b41", "#78a1c6"),
             widget.Prompt(
                 prompt=" Spawn: ",
-                background="#fadb2f",
-                foreground="#282828",
+                background="#141b41",
+                foreground="#dbe9ee",
                 font="Lilex Nerd Font",
                 padding=6,
             ),
 
-            separator_left("#665c54", "#fadb2f"),
-            widget.WindowName(background="#665c54", foreground="#fbf1c7", max_chars=40),
+            separator_left("#9cbcd3", "#141b41"),
+            widget.WindowName(background="#9cbcd3", foreground="#001b25", max_chars=40),
 
-            separator_left("#a89984", "#665c54"),
+            separator_left("#306bac", "#9cbcd3"),
             widget.Backlight(
                 backlight_name="intel_backlight",  # change if different
                 format="  {percent:2.0%} ",
-                background="#a89984",
-                foreground="#1d2021",
+                background="#306bac",
+                foreground="#dbe9ee",
                 step=5
             ),
 
-            separator_left("#bdae93", "#a89984"),
+            separator_left("#224377", "#306bac"),
             widget.GenPollText(
                 func=get_volume,
                 update_interval=1,
                 fmt=" {} ",
-                background="#bdae93",
-                foreground="#1d2021",
+                background="#224377",
+                foreground="#dbe9ee",
             ),
 
-            separator_left("#d5c4a1", "#bdae93"),
+            separator_left("#1b2f5c", "#224377"),
             widget.Battery(
-                background="#d5c4a1",
-                foreground="#1d2021",
+                background="#1b2f5c",
+                foreground="#dbe9ee",
                 format=" {char} {percent:2.0%} ",
                 charge_char="",
                 discharge_char="",
@@ -96,17 +96,17 @@ screens = [
                 full_char="",
             ),
 
-            separator_left("#ebdbb2", "#d5c4a1"),
+            separator_left("#0a1128", "#1b2f5c"),
             widget.Clock(
-                background="#ebdbb2",
-                foreground="#1d2021",
+                background="#0a1128",
+                foreground="#dbe9ee",
                 format="  %I:%M %p    %a, %d %b"
             ),
 
-            separator_left("#fb4934", "#ebdbb2"),
+            separator_left("#fb4934", "#0a1128"),
             widget.QuickExit(
                 background="#fb4934",
-                foreground="#fbf1c7",
+                foreground="#dbe9ee",
                 default_text=" ⏻ ",
                 countdown_format=" {} "
             ),
