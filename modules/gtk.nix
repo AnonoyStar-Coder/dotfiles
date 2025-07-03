@@ -4,12 +4,14 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Gruvbox-Dark";
-      package = pkgs.gruvbox-gtk-theme;
+      package = pkgs.orchis-theme.override {
+        tweaks = [ "dark" ];  # select the 'Dark' variant
+      };
+      name = "Orchis-Dark";
     };
     iconTheme = {
-      name = "Gruvbox-Plus-Dark";
-      package = pkgs.gruvbox-plus-icons;
+      package = pkgs.papirus-icon-theme;
+      name = "Papirus-Dark";
     };
   };
 }

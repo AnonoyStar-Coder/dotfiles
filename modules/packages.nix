@@ -18,7 +18,6 @@
     twingate
 
     # Declarative Theme
-    gruvbox-gtk-theme
-    gruvbox-plus-icons
+    orchis-theme papirus-icon-theme
   ];
 }

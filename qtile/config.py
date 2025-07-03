@@ -51,8 +51,8 @@ screens = [
             widget.GroupBox(
                 background="#78a1c6",
                 highlight_method="line",
-                inactive="#1d2021",
-                this_current_screen_border="#fe8019",
+                inactive="#c7c7c7",
+                this_current_screen_border="#008996",
             ),
 
             separator_left("#141b41", "#78a1c6"),
