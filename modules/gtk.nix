@@ -5,7 +5,7 @@
     enable = true;
     theme = {
       package = pkgs.orchis-theme.override {
-        tweaks = [ "dark" ];  # select the 'Dark' variant
+        tweaks = [ "solid" ];  # select the 'Dark' variant
       };
       name = "Orchis-Dark";
     };
