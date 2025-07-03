@@ -30,6 +30,8 @@ alias gruv-theme='cd ~/dotfiles && git checkout main && git pull && cd -'
 
 alias blue-theme='cd ~/dotfiles && git checkout blue && git pull && cd -'
 
+alias green-theme='cd ~/dotfiles && git checkout green && git pull && cd -'
+
 alias switch='sudo nixos-rebuild switch --flake ~/dotfiles/ --impure'
 
 alias rebuild='sudo nixos-rebuild switch --flake ~/dotfiles/ --impure'
