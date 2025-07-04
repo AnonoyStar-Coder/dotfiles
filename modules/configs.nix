@@ -6,6 +6,4 @@
   home.file.".config/rofi".source = ../rofi;
   home.file.".config/spotify-player".source = ../spotify-player;
   home.file.".config/walls".source = ../walls;
-  home.file.".vim".source = ../vim;
-  home.file.".vimrc".source = ../.vimrc;
 }
