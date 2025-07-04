@@ -21,26 +21,25 @@
 
   time.timeZone = "Asia/Kolkata";
 
-  environment.etc."walls/gruvbox-nix.png".source = ./walls/anime1.png;
-  environment.etc."walls/castle.jpg".source = ./walls/anime-lock.png;
+  environment.etc."walls/wallpaper.jpg".source = ./walls/anime-lock.png;
 
   services.xserver = {
     enable = true;
     windowManager.qtile.enable = true;
     displayManager.sessionCommands = ''
-        xwallpaper --zoom /etc/walls/gruvbox-nix.png'';
+        xwallpaper --zoom /etc/walls/wallpaper.jpg'';
   };
   services.xserver.desktopManager.gnome.enable = true;
   services.xserver.displayManager.lightdm = {
       enable = true;
-      background = "/etc/walls/castle.jpg";
+      background = "/etc/walls/wallpaper.jpg";
 
       greeters.gtk = {
           enable = true;
-          theme.name = "Gruvbox-Dark";
-          theme.package = pkgs.gruvbox-gtk-theme;
-          iconTheme.name = "Gruvbox-Plus";
-          iconTheme.package = pkgs.gruvbox-plus-icons;
+          theme.name = "Orchis-Dark";
+          theme.package = pkgs.orchis-theme;
+          iconTheme.name = "Papirus-Dark";
+          iconTheme.package = pkgs.papirus-icon-theme;
 
           cursorTheme.name = "Future-Cursors";
           cursorTheme.size = 24;
@@ -160,7 +159,7 @@
     vSync = true;
     # Configure opacity for specific applications.
     # Example for Alacritty and Kitty terminals:
-    
+
   };
 
   system.stateVersion = "25.05";
