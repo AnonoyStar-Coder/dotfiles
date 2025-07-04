@@ -1,1 +1,1 @@
-runtime vimrc
+runtime ~/dotfiles/vim/vimrc
