@@ -47,12 +47,12 @@ extension_defaults = widget_defaults.copy()
 screens = [
     Screen(
         top=bar.Bar([
-            separator_left("#78a1c6", "#1d2021"),
+            separator_left("#1b2f5c", "#1d2021"),
             widget.GroupBox(
-                background="#78a1c6",
-                highlight_color="#78a1c6",
+                background="#1b2f5c",
+                highlight_color="#1b2f5c",
                 foreground="#001b25",
-                active="#001b25",
+                active="#9cbcd3",
                 font="Lilex Nerd Font",
                 fontsize=18,
                 padding=6,
@@ -64,7 +64,7 @@ screens = [
                 this_current_screen_border="#005F96",
             ),
 
-            separator_left("#141b41", "#78a1c6"),
+            separator_left("#141b41", "#1b2f5c"),
             widget.Prompt(
                 prompt=" Spawn: ",
                 background="#141b41",
