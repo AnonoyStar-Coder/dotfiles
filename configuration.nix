@@ -106,6 +106,7 @@
     xfce.thunar-volman
     xfce.thunar-vcs-plugin
     xfce.thunar-archive-plugin
+    firefoxpwa
     xorg.xev
     xorg.xmodmap
     picom
@@ -133,6 +134,8 @@
   nerd-fonts.ubuntu
 ];
 
+  programs.firefox.nativeMessagingHosts.packages = [ pkgs.firefoxpwa ];
+
   services.openssh.enable = true;
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
@@ -157,9 +160,6 @@
     enable = true;
     backend = "glx"; # or "xrender"
     vSync = true;
-    # Configure opacity for specific applications.
-    # Example for Alacritty and Kitty terminals:
-
   };
 
   system.stateVersion = "25.05";
