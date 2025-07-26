@@ -3,7 +3,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
       # home-manager module now comes from flake.nix
     ];
 
@@ -30,6 +30,7 @@
     displayManager.sessionCommands = ''
         xwallpaper --zoom /etc/walls/gruvbox-nix.png'';
   };
+  services.xserver.desktopManager.gnome.enable = true;
   services.xserver.displayManager.lightdm = {
       enable = true;
       background = "/etc/walls/castle.jpg";
